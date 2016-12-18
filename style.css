@@ -1,0 +1,523 @@
+body{
+    background: url("http://alexkreative.com/wp-content/uploads/2012/10/wood-wallpaper.jpg") no-repeat center fixed #000;
+    color:#fff;
+}
+h3{
+    margin:0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 28px;
+    text-align: center;
+}
+/*************************Responsive Nav Menu style******************************/
+#top{
+    margin:0 0;
+    position: fixed;
+    width:100%;
+    z-index: 1000;
+}
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(255,68,0,1);
+}
+
+/* Float the list items side by side */
+ul.topnav li {float: right;}
+
+/* Style the links inside the list items */
+ul.topnav li a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of links on hover */
+ul.topnav li a:hover {background-color: #111;}
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+ul.topnav li.icon {display: none;}
+
+/* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}/******************************END OF MENU STYLE*********************************/
+
+/*******************************SELECTION Style**********************************/
+::-moz-selection { /* Firefox */
+    color: white;
+    background: rgba(255,68,0,0.5);
+}
+
+::selection {
+    color: white;
+    background: rgba(255,68,0,0.5);
+}
+/*******************************END SELECTION style******************************/
+
+
+
+/********************************MY NAME STYLE************************************/
+.my_name{
+    color:#fff;
+    font-family: 'Lobster', cursive;
+    font-size:25px;
+    position: absolute;
+    left:20px;
+    top:10px;
+    -webkit-transition:  0.5s;
+    -moz-transition:  0.5s;
+    transition:  0.5s;
+    
+}
+@media screen and (max-width:900px){
+    .my_name{
+        font-size:20px;
+        left:30px;
+        top:13px;
+        -webkit-transition:  0.5s;
+    -moz-transition:  0.5s;
+    transition:  0.5s;
+    }
+}
+@media screen and (max-width:680px){
+    .my_name{
+    opacity: 0;
+    -webkit-transition:  0.5s;
+    -moz-transition:  0.5s;
+    transition:  0.5s;
+    }
+}/********************************END of MY NAME STYLE************************************/
+
+/*********************************PERSONAL INFORMATION STYLE*****************************/
+#cont{
+    padding-top: 150px;
+}
+.big_p_pic{
+    margin:0 auto;
+    border:none;
+    width:200px;
+    height: 200px;
+    background: url("https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAh9AAAAJGU2YTdmYTc3LTA0OWYtNDg0Mi05ZDdmLWQzNDVjODQ4YzZkMA.jpg") no-repeat center;
+    background-size: 200px 200px;
+    border-radius: 100px;
+    margin-bottom: 50px;
+    border:solid 5px rgba(0,0,0,0.5);
+}
+
+.personal_info p{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    /background-color:rgba(0,0,0,0.3);
+    opacity:0.9;
+    padding: 10px;
+    /border-radius: 50px;
+    /-webkit-border-radius: 10px;
+    /-moz-border-radius: 100px;
+    font-weight: bold;
+    -webkit-text-shadow: 0px 1px 2px #000;
+    -moz-text-shadow: 0px 1px 2px #000;
+    text-shadow: 0px 1px 2px #000;
+    /border:solid 1px rgba(255,68,0,0.5);
+    transition:  0.5s;
+}
+@media screen and (max-width:1000px){
+    .personal_info p{
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+        transition:  0.5s;
+    }
+}
+@media screen and (max-width:680px){
+    .personal_info p{
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+        transition:  0.5s;
+    }
+}
+.art{
+    background:url("https://s19.postimg.org/9gd0aj3ir/art.png") no-repeat transparent;
+   background-position:bottom center;
+    height:225px;
+    margin-bottom:10px;
+}
+
+/***************************END of PERSONAL INFORMATION STYLE**************************/
+
+
+/***************************Responsive Grid STYLE**************************/
+#p_wrapper{
+    width:90%;
+    max-width: 1100px;
+    min-width:400px;
+    margin:50px auto;
+}
+#post_columns{
+    -webkit-column-count:2;
+    -webkit-column-gap:10px;
+    -webkit-column-fill:auto;
+    -moz-column-count:2;
+    -moz-column-gap:10px;
+    -moz-column-fill:auto;
+    column-count:2;
+    column-gap:15px;
+    column-fill:auto;
+    margin-top:30px;
+}
+.post_grid{
+    display: inline-block;
+    background: rgba(0,0,0,0.8);
+    border:1px solid rgba(255,68,0,0.7);
+    -webkit-box-shadow: 0 1px 2px rgba(34, 25,25, 0.4);
+    -moz-box-shadow: 0 1px 2px rgba(34, 25,25, 0.4);
+    box-shadow: 0 1px 2px rgba(34, 25,25, 0.4);
+    margin:0 2px 15px;
+    -webkit-column-break-inside:avoid;
+    -moz-column-break-inside:avoid;
+    colum-break-inside:avoid;
+    padding:15px;
+    padding-bottom: 5px;
+    background: -webkit-liner-gradient(45deg, #fff,#f9f9f9);
+    opacity: 1;
+    
+    -webkit-transition:all .2s ease;
+    -mox-transition:all .2s ease;
+    -o-transition:all .2s ease;
+    transition:all .2s ease;
+}
+.post_grid img{
+    width:100%;
+    border-bottom: 1px solid rgba(255,68,0,0.7);
+    padding-bottom: 15px;
+    margin-bottom: 5px;
+}
+.post_grid p{
+    font:12px/20px 'Open Sans', sans-serif;
+    color:#fff;
+    margin:0;
+    padding-bottom:5px;
+    border-bottom: 1px solid rgba(255,68,0,0.7);
+}
+.post_grid #love_btn{
+    border:none;
+    color:#fff;
+    margin-top:5px;
+    width:30px;
+    height: 30px;
+    background:url("http://s19.postimg.org/o0doele37/o_heart.png") no-repeat center;
+    background-size: 30px 30px;
+}
+
+@media (min-width:560px){
+    #post_columns{
+        -webkit-column-count:1;
+        -moz-column-count:1;
+        column-count: 1;
+    }
+}
+@media(min-width:780px){
+    #post_columns{
+    -webkit-column-count:2;
+    -moz-column-count:2;
+    column-count: 2;
+    }
+}
+@media(min-width:1100px){
+    #post_columns{
+    -webkit-column-count:3;
+    -moz-column-count:3;
+    column-count: 3;
+    }
+}
+/***************************End Responsive Grid STYLE**************************/
+
+/***************************Footer style***************************************/
+#my_footer p{
+    padding:0;
+    margin:0;
+}
+footer span{
+    color:#f40;
+    font-family: 'Lobster', cursive;
+    letter-spacing: 2px;
+    margin:40px 0 0;
+}
+#social_net {
+    margin: 30px 0 10px 0;
+    float: right;
+    width: auto;
+}
+.in_btn{
+    background: url("http://s19.postimg.org/emihuk5g3/in_icon.png") no-repeat;
+    width:30px;
+    height:30px;
+    border:0;
+    margin-right:5px;
+    transition:0.2s;
+}
+
+.in_btn:hover{
+    padding-bottom:5px;
+    transition:0.2s;
+}
+.ghub_btn{
+    background: url("http://s19.postimg.org/3ph65sioj/ghub_icon.png") no-repeat;
+    width:30px;
+    height:30px;
+    border:0;
+    margin-right:5px;
+    transition:0.2s;
+}
+.ghub_btn:hover{
+    padding-bottom:5px;
+    transition:0.2s;
+}
+.cpen_btn{
+    background: url("http://s19.postimg.org/m3rp9ruz7/cpen_icon.png") no-repeat;
+    width:30px;
+    height:30px;
+    border:0;
+    margin-right:5px;
+    transition:0.2s;
+}
+.cpen_btn:hover{
+    padding-bottom:5px;
+    transition:0.2s;
+}
+/*****************************END Footer style*********************************/
+
+/************************ PROGRESS BAR STYLE **********************************/
+.progress_bar{
+    background:#1a1a1a;
+    -webkit-box-shadow: inset 0px 0px 8px 8px rgba(0,0,0,0.75);
+-moz-box-shadow: inset 0px 0px 8px 8px rgba(0,0,0,0.75);
+box-shadow: inset 0px 0px 4px 4px rgba(0,0,0,0.75);
+    width:80%;
+    height: 20px;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    border-radius:8px;
+    padding:2px;
+	border: solid 1px #cfcfcf;
+    opacity: 0.8;
+    margin-top: 5px;
+}
+.p_percentage{  
+background-image:url("http://i.stack.imgur.com/QoWYn.png");
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffb76b+0,ffa73d+50,ff7c00+51,ff7f04+100;Orange+Gloss */
+background: rgb(255,183,107); /* Old browsers */
+background: url("http://s19.postimg.org/fj1ec9s43/f40.png") , -moz-linear-gradient(top,  rgba(255,183,107,1) 0%, rgba(255,167,61,1) 50%, rgba(255,124,0,1) 51%, rgba(255,127,4,1) 100%); /* FF3.6-15 */
+background: url("http://s19.postimg.org/fj1ec9s43/f40.png") , -webkit-linear-gradient(top,  rgba(255,183,107,1) 0%,rgba(255,167,61,1) 50%,rgba(255,124,0,1) 51%,rgba(255,127,4,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: url("http://s19.postimg.org/fj1ec9s43/f40.png") , linear-gradient(to bottom,  rgba(255,183,107,1) 0%,rgba(255,167,61,1) 50%,rgba(255,124,0,1) 51%,rgba(255,127,4,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb76b', endColorstr='#ff7f04',GradientType=0 ); /* IE6-9 */
+
+    height: 14px;
+    text-align: right;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+    color:#000;
+    border:solid 0.5px #f40;
+    font-size: 8px;
+    padding-right: 2px;
+    -webkit-text-shadow: 0px 0.5px 0px #18201f;
+    -moz-text-shadow: 0px 0.5px 0px #18201f;
+    text-shadow: 0px 0.5px 0px #18201f;
+    font-family: cursive;
+    font-weight: bold;
+}
+._10_p{
+    width:10%;
+}
+._20_p{
+    width:20%;
+}
+._25_p{
+    width:25%;
+}
+._30_p{
+    width:30%;
+}
+._40_p{
+    width:40%;
+}
+._40_p{
+    width:40%;
+}
+._50_p{
+    width:50%;
+}
+._60_p{
+    width:60%;
+}
+._70_p{
+    width:70%;
+}
+._75_p{
+    width:75%;
+}
+._80_p{
+    width:80%;
+}
+._90_p{
+    width:90%;
+}
+._100_p{
+    width:100%;
+}
+
+/************************END PROGRESS BAR STYLE *******************************/
+
+/******************************** SKILLS STYLE ********************************/
+#progress_cont{
+    max-width:100px;
+    display:inline-block;
+    margin-right:20px;
+    
+}
+.reddyCont img{
+    background-color: rgba(229, 81, 38,0.5);
+}
+.yellowCont img{
+    background-color: rgba(228, 160, 39,0.5);
+}
+.blueCont img{
+    background-color: rgba(12, 115, 184,0.5);
+}
+.magentaCont img{
+    background-color: rgba(82, 97, 145,0.5);
+}
+.whiteCont img{
+    background-color: rgba(255,255,255,0.5);
+}
+.greenCont img{
+    background-color: rgba(158,247,95,0.5);
+}
+
+.skillsCont img{
+	padding:5px;
+	width: 80%;
+    -webkit-border-radius: 75px;
+    -moz-border-radius: 75px;
+    border-radius: 30px;
+    margin-top:20px;
+    border: solid 4px rgba(232, 232, 232, 0.70);
+}
+
+/***********************END SKILLS STYLE ****************************/
+/*************************h1 SUBJECTS STYLE**************************/
+h1{
+    margin-bottom: 20px;
+    font-size: 60px;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    color: white;
+  text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+    -webkit-text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+    -moz-text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+}
+/************************END h1 Labels STYLE***********************/
+
+
+#moocs{
+    background:rgba(0,0,0,0.3);
+        padding:10px;
+  margin-top:25px;
+}
+#moocs h5{
+    display: inline;
+}
+#moocs a{
+    color:#f40;
+}
+#moocs p{
+    display: inline;
+    color:#f40;
+}
+
+
+.moocs{
+	display: block;
+}
+
+span.donwload_cv {
+    position: fixed;
+    top: 50%;
+    transform: rotate(-90deg);
+    left: -78px;
+    color: #fff;
+    background: #f40;
+    padding: 10px;
+    border-radius: 0 0 5px 5px;
+    transition: 0.5s;
+}
+span.donwload_cv:hover{
+    background: #b33000;
+    color: #ff6f3a;
+    transition: 0.5s;
+}
