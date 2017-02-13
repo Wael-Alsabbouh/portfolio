@@ -23,7 +23,7 @@ ul.topnav {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: rgba(255,68,0,1,0.8);
+    background-color: rgba(255,68,0,0.8);
     -webkit-border-radius: 65px 0 0 65px;
     -moz-border-radius: 65px 0 0 65px;
      border-radius: 65px 0 0 65px;
