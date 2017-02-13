@@ -1,6 +1,7 @@
 body{
     background: url("http://www.thepaintershandbook.com/wp-content/uploads/2016/10/Black-Wallpapers-For-Computer.jpg") no-repeat center fixed #000;
     color:#fff;
+    background-size: cover;
 }
 h3{
     margin:0;
