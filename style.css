@@ -268,6 +268,9 @@ ul.topnav li.icon {display: none;}
 /***************************End Responsive Grid STYLE**************************/
 
 /***************************Footer style***************************************/
+.fc{
+	margin-bottom: 25px;
+}
 #my_footer p{
     padding:0;
     margin:0;
@@ -278,47 +281,28 @@ footer span{
     letter-spacing: 2px;
     margin:40px 0 0;
 }
-#social_net {
-    margin: 30px 0 10px 0;
-    float: right;
-    width: auto;
+.social_cont{
+	margin-top: 25px;
 }
-.in_btn{
-    background: url("http://s19.postimg.org/emihuk5g3/in_icon.png") no-repeat;
-    width:30px;
-    height:30px;
-    border:0;
-    margin-right:5px;
-    transition:0.2s;
+.social_media li {
+	list-style:none;
+	display:inline-block;
+	float:right;
 }
-
-.in_btn:hover{
-    padding-bottom:5px;
-    transition:0.2s;
+.social_media i {
+    background: #f40;
+    padding: 7px;
+    list-style: none;
+    color: #000;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    border-radius: 40px;
+	margin: 0 5px;
+	transition:.2s;
 }
-.ghub_btn{
-    background: url("http://s19.postimg.org/3ph65sioj/ghub_icon.png") no-repeat;
-    width:30px;
-    height:30px;
-    border:0;
-    margin-right:5px;
-    transition:0.2s;
-}
-.ghub_btn:hover{
-    padding-bottom:5px;
-    transition:0.2s;
-}
-.cpen_btn{
-    background: url("http://s19.postimg.org/m3rp9ruz7/cpen_icon.png") no-repeat;
-    width:30px;
-    height:30px;
-    border:0;
-    margin-right:5px;
-    transition:0.2s;
-}
-.cpen_btn:hover{
-    padding-bottom:5px;
-    transition:0.2s;
+.social_media i:hover{
+	padding: 10px;
+	transition:.2s;
 }
 /*****************************END Footer style*********************************/
 
@@ -508,23 +492,19 @@ h1{
 .moocs{
 	display: block;
 }
-
-span.donwload_cv {
-    position: fixed;
-    top: 50%;
-    transform: rotate(-90deg);
-    left: -78px;
-    color: #fff;
-    background: #f40;
-    padding: 10px;
-    border-radius: 0 0 5px 5px;
-    transition: 0.5s;
-}
-span.donwload_cv:hover{
-    background: #b33000;
-    color: #ff6f3a;
-    transition: 0.5s;
-}
+.cv_btn{
+	list-style:none;
+	position:fixed;
+	left:-139px;
+	bottom:40%;
+	opacity:0.7;
+	transition:0.5s;
+	}
+	.cv_btn:hover{
+	left:0;
+	opacity:1;
+	transition:0.5s;
+	}
 
 /*scroll style*/
 ::-webkit-scrollbar {
